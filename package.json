@@ -1,0 +1,44 @@
+{
+  "name": "xflystudio_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon",
+    "start": "node lib/index.js",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fly:install": "brew install flyctl",
+    "fly:deploy": "fly deploy"
+  },
+  "dependencies": {
+    "@koa/cors": "^4.0.0",
+    "consola": "^3.1.0",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^9.0.0",
+    "koa": "^2.14.2",
+    "koa-joi-router": "^8.0.0",
+    "koa-joi-router-docs-v2": "^1.4.0",
+    "koa-jwt": "^4.0.4",
+    "koa-logger": "^3.2.1",
+    "koa-response-time": "^2.1.0",
+    "koa-bodyparser": "^4.4.0",
+    "sqlite3": "^5.1.6",
+    "sqlite3orm": "^2.6.4"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.2.5",
+    "@types/koa": "^2.13.6",
+    "@types/koa__cors": "^4.0.0",
+    "@types/koa__router": "^12.0.0",
+    "@types/koa-joi-router": "^8.0.4",
+    "@types/koa-logger": "^3.1.2",
+    "@types/koa-response-time": "^2.1.2",
+    "cross-env": "^7.0.3",
+    "typescript": "^4.9.0"
+  },
+  "author": "xFly",
+  "license": "MIT"
+}
